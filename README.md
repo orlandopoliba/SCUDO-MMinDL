@@ -3,6 +3,8 @@ Repository with material for the SCUDO course "Mathematical Methods in Deep Lear
 
 See the [logbook](logbook.md) for the detailed program of the course.
 
+See the [references](references.md) for the list of references used in the course.
+
 ## Program
 The objective of the course is to provide basic mathematical concepts and tools needed to have a clear insight into the mechanisms of neural networks and deep learning. Both theoretical and practical aspects will be covered, with hands-on exercise sessions for which the active participation of the students will be strongly encouraged.
  
