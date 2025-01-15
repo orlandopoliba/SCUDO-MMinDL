@@ -8,6 +8,6 @@ Slides for the introduction: [link](slides/Introduction.pdf)
 # Lesson 2 
 15/01/2025
 
-The machine learning framework. Expected risk and empirical risk. Minimization of the empirical risk on the dataset. Linear regression. 
+The machine learning framework. Expected risk and empirical risk. Minimization of the empirical risk on the dataset. Linear regression. Using the `pandas` library in Python for data manipulation. Exploring the real estate dataset.
 
 Notes for the machine learning framework: [link](notes/01%20-%20The%20Machine%20Learning%20Framework.pdf)
