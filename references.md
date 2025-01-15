@@ -17,3 +17,6 @@
 
 ## Linear regression 
 - T. Hastie, R. Tibshirani, and J. Friedman, The Elements of Statistical Learning, Springer, 2009.
+
+## Datasets
+- Real estate dataset collected from https://www.kaggle.com/datasets/kirbysasuke/house-price-prediction-simplified-for-regression
