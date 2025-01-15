@@ -13,3 +13,7 @@
 
 ## Machine learning
 - A. Quarteroni. Physics-based and data-driven mathematical models for the simulation of complex problems. C.I.M.E. Course. https://sites.google.com/unifi.it/cime/c-i-m-e-courses/c-i-m-e-courses-2024/pdes-control-and-deep-learning
+- T. Hastie, R. Tibshirani, and J. Friedman, The Elements of Statistical Learning, Springer, 2009.
+
+## Linear regression 
+- T. Hastie, R. Tibshirani, and J. Friedman, The Elements of Statistical Learning, Springer, 2009.
