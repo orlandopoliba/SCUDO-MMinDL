@@ -19,6 +19,6 @@ Python notebook on linear regression: [link](notebooks/01-linear_regression_hous
 
 Linear regression. Explicit derivation of the optimal weights for linear regression. Train and test sets. Coefficient of determination. 
 
-Notes for linear regression: [link](notes/02%20-%20Linear%20Regression.pdf)
+Notes for linear regression: [link](notes/02%20-%20Linear%20regression.pdf)
 
 Python notebook on linear regression: [link](notebooks/01-linear_regression_house_prices.ipynb)
