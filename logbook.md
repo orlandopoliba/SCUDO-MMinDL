@@ -13,3 +13,12 @@ The machine learning framework. Expected risk and empirical risk. Minimization o
 Notes for the machine learning framework: [link](notes/01%20-%20The%20Machine%20Learning%20Framework.pdf)
 
 Python notebook on linear regression: [link](notebooks/01-linear_regression_house_prices.ipynb)
+
+# Lesson 3 
+20/01/2025
+
+Linear regression. Explicit derivation of the optimal weights for linear regression. Train and test sets. Coefficient of determination. 
+
+Notes for linear regression: [link](notes/02%20-%20Linear%20Regression.pdf)
+
+Python notebook on linear regression: [link](notebooks/01-linear_regression_house_prices.ipynb)
