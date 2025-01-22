@@ -22,3 +22,13 @@ Linear regression. Explicit derivation of the optimal weights for linear regress
 Notes for linear regression: [link](notes/02%20-%20Linear%20regression.pdf)
 
 Python notebook on linear regression: [link](notebooks/01-linear_regression_house_prices.ipynb)
+
+# Lesson 4
+22/01/2025
+
+The MNIST dataset. Introduction to binary classification. The logistic regression model. Entropy. Cross-entropy. Kullback-Leibler divergence. Jensen's inequality. Cross-entropy loss in binary logistic regression.
+
+Notes for logistic regression: [link](notes/03%20-%20Logistic%20regression%20&%20Cross-entropy.pdf)
+
+Python notebook on MNIST dataset: [link](notebooks/02-using_MNIST.ipynb)
+
