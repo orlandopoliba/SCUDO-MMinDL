@@ -18,5 +18,9 @@
 ## Linear regression 
 - T. Hastie, R. Tibshirani, and J. Friedman, The Elements of Statistical Learning, Springer, 2009.
 
+## Logistic regression
+- C. M. Bishop, Pattern Recognition and Machine Learning, Springer, 2006.
+
 ## Datasets
 - Real estate dataset collected from https://www.kaggle.com/datasets/kirbysasuke/house-price-prediction-simplified-for-regression
+- MNIST dataset collected from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
