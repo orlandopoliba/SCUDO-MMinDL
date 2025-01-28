@@ -21,6 +21,9 @@
 ## Logistic regression
 - C. M. Bishop, Pattern Recognition and Machine Learning, Springer, 2006.
 
+## Cross-entropy
+- T. Cover and J. Thomas, Elements of Information Theory, Wiley, 1991.
+
 ## Datasets
 - Real estate dataset collected from https://www.kaggle.com/datasets/kirbysasuke/house-price-prediction-simplified-for-regression
 - MNIST dataset collected from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
