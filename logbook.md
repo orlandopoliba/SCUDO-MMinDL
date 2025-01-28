@@ -26,7 +26,7 @@ Python notebook on linear regression: [link](notebooks/01-linear_regression_hous
 # Lesson 4
 22/01/2025
 
-The MNIST dataset. Introduction to binary classification. The logistic regression model. Entropy. Cross-entropy. Kullback-Leibler divergence. Jensen's inequality. Cross-entropy loss in binary logistic regression.
+The MNIST dataset. Introduction to binary classification. The logistic regression model. Sigmoid function. Entropy. Cross-entropy. Kullback-Leibler divergence. Jensen's inequality. Cross-entropy loss in binary logistic regression.
 
 Notes for logistic regression: [link](notes/03%20-%20Logistic%20regression%20&%20Cross-entropy.pdf)
 
@@ -35,6 +35,6 @@ Python notebook on MNIST dataset: [link](notebooks/02-using_MNIST.ipynb)
 # Lesson 5 
 27/01/2025
 
-Cross-entropy loss in binary logistic regression. Optimization of the cross-entropy loss. Multi-class logistic regression. Softmax function. Cross-entropy loss in multi-class logistic regression.
+Cross-entropy loss in binary logistic regression. Optimization of the cross-entropy loss. One-hot encoding of classes. Multi-class logistic regression. Softmax function. Cross-entropy loss in multi-class logistic regression.
 
 Python notebook on binary logistic regression: [link](notebooks/03-binary_logistic_regression.ipynb)
