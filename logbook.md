@@ -38,3 +38,22 @@ Python notebook on MNIST dataset: [link](notebooks/02-using_MNIST.ipynb)
 Cross-entropy loss in binary logistic regression. Optimization of the cross-entropy loss. One-hot encoding of classes. Multi-class logistic regression. Softmax function. Cross-entropy loss in multi-class logistic regression.
 
 Python notebook on binary logistic regression: [link](notebooks/03-binary_logistic_regression.ipynb)
+
+# Lesson 6
+29/01/2025
+
+Multi-class logistic regression for the MNIST dataset. 
+
+Likelihood of data in a parametric model. Equivalence between minimization of cross-entropy and of negative log-likelihood. 
+
+Optimization algorithms. Geometrical meaning of the gradient. Gradient descent algorithm. Continuous counterpart: gradient flow. Decrease of the loss function along a gradient flow. Comments on the choice of the learning rate with examples.
+
+Notes on logistic regression: [link](notes/03%20-%20Logistic%20regression%20&%20Cross-entropy.pdf)
+
+Notes on Maximum Likelihood Estimators: [link](notes/04%20-%20Maximum%20likelihood%20estimators.pdf)
+
+Notes on Gradient Descent: [link](notes/05%20-%20Gradient%20Descent.pdf)
+
+Python notebook on multi-class logistic regression: [link](notebooks/04-multiclass_logistic_regression.ipynb)
+
+Python notebook on gradient descent: [link](notebooks/05-gradient_descent.ipynb)
