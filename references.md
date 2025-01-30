@@ -24,6 +24,12 @@
 ## Cross-entropy
 - T. Cover and J. Thomas, Elements of Information Theory, Wiley, 1991.
 
+## Optimization algorithms
+- J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
+
+## Gradient descent
+- G. Garrigos, R. M. Gower. Handbook of convergence theorems for (Stochastic) Gradient Methods. https://arxiv.org/abs/2301.11235
+
 ## Datasets
 - Real estate dataset collected from https://www.kaggle.com/datasets/kirbysasuke/house-price-prediction-simplified-for-regression
 - MNIST dataset collected from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
