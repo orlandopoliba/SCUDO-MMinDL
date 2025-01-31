@@ -57,3 +57,5 @@ Notes on Gradient Descent: [link](notes/05%20-%20Gradient%20Descent.pdf)
 Python notebook on multi-class logistic regression: [link](notebooks/04-multiclass_logistic_regression.ipynb)
 
 Python notebook on gradient descent: [link](notebooks/05-gradient_descent.ipynb)
+
+About the question "Does a minimum of the cross-entropy in logistic regression always exist?": [link](notes/04bis%20-%20About%20the%20existence%20of%20min%20for%20cross-entropy.pdf)
