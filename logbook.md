@@ -73,6 +73,6 @@ Notes on Gradient Descent: [link](notes/05%20-%20Gradient%20Descent.pdf)
 
 Python notebook on gradient descent: [link](notebooks/05-gradient_descent.ipynb)
 
-Notes on neural networks: [link](notes/06%20-%20Neural%20networks.pdf)
+Notes on neural networks: [link](notes/06%20-%20Neural%20Networks.pdf)
 
 Notes on the perceptron: [link](notes/07%20-%20Perceptron.pdf)
