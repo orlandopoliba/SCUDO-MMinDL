@@ -59,3 +59,20 @@ Python notebook on multi-class logistic regression: [link](notebooks/04-multicla
 Python notebook on gradient descent: [link](notebooks/05-gradient_descent.ipynb)
 
 About the question "Does a minimum of the cross-entropy in logistic regression always exist?": [link](notes/04bis%20-%20About%20the%20existence%20of%20min%20for%20cross-entropy.pdf)
+
+# Lesson 7
+03/02/2025
+
+Unrolling of the gradient descent algorithm for quadratic losses. Relationship between the learning rate and the eigenvalues of the Hessian matrix. Convergence of the gradient descent algorithm under suitable conditions on the loss function. The problem of local minima.
+
+Introduction to neural networks. Interpreting linear regression as a one-layer neural network. Layers in a linear neural network. Expressiveness of neural networks. Activation functions. 
+
+The perceptron as an artificial neuron. Expressing the NAND logical gate with a perceptron. Functional completeness of the NAND gate. 
+
+Notes on Gradient Descent: [link](notes/05%20-%20Gradient%20Descent.pdf)
+
+Python notebook on gradient descent: [link](notebooks/05-gradient_descent.ipynb)
+
+Notes on neural networks: [link](notes/06%20-%20Neural%20networks.pdf)
+
+Notes on the perceptron: [link](notes/07%20-%20Perceptron.pdf)
