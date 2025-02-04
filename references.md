@@ -24,11 +24,19 @@
 ## Cross-entropy
 - T. Cover and J. Thomas, Elements of Information Theory, Wiley, 1991.
 
-## Optimization algorithms
+## Optimization algorithms (general reference)
 - J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
 ## Gradient descent
 - G. Garrigos, R. M. Gower. Handbook of convergence theorems for (Stochastic) Gradient Methods. https://arxiv.org/abs/2301.11235
+
+## Neural networks
+- M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.
+- I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning, MIT Press, 2016.
+
+## Perceptron
+- F. Rosenblatt, The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain, Cornell Aeronautical Laboratory, 1957.
+- M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.å
 
 ## Datasets
 - Real estate dataset collected from https://www.kaggle.com/datasets/kirbysasuke/house-price-prediction-simplified-for-regression
