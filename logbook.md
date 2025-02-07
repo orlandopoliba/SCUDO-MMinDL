@@ -76,3 +76,35 @@ Python notebook on gradient descent: [link](notebooks/05-gradient_descent.ipynb)
 Notes on neural networks: [link](notes/06%20-%20Neural%20Networks.pdf)
 
 Notes on the perceptron: [link](notes/07%20-%20Perceptron.pdf)
+
+# Lesson 8 
+05/02/2025
+
+Python classes. Definition of a class. Attributes and methods. The `__init__` method. The `self` keyword. Inheritance.
+
+Creating a Python library. Folder structure. Importing from a module. Implementation of:
+- the `Sequential` class for the definition of a multi-layered neural network 
+- the `Layer` class for the definition of a layer in a neural network
+- the `Linear` class for the definition of a linear layer in a neural network 
+- the `Sigmoid` class for the definition of a sigmoid activation function
+- the `forward` method in a layer and in a neural network
+- the `Loss` class for the definition of a loss function
+- the `MSE` class for the definition of the mean squared error loss function
+
+The backpropagation algorithm. The chain rule. The backpropagation algorithm for a neural network. Implementation of:
+- the `backward` method in the `MSE` class
+- the `backward` method in the `Linear` class
+
+Python notebook on Python classes: [link](notebooks/06-python_classes.ipynb)
+
+Python notebook on building a neural network library: [link](notebooks/07-building_a_library.ipynb)
+
+Python notebook with tests for the library: [link](notebooks/08-testing_the_library.ipynb)
+
+Notes on backpropagation: [link](notes/08%20-%20Backpropagation.pdf)
+
+Computation of the gradient of the mean squared error loss function: [link](notes/09%20-%20Grads%20|%20MSE.pdf)
+
+Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20|%20Linear%20layer.pdf)
+
+Folder of the Python library: [link](mydl/)
