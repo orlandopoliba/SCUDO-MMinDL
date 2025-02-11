@@ -51,11 +51,15 @@ class Linear(Layer):
       - y: output tensor. Shape (n_samples, fan_out).
     """
     self.x = x # Storing the input tensor for the backward pass
-    return x @ self.parameters['W'] + self.parameters['b']
+    self.y = x @ self.parameters['W'] + self.parameters['b']
+    return self.y
   
   def backward(self, dL_dy):
     """
+    Backward pass through the linear layer. Computes the gradients of the loss with respect to the parameters and the input.
     
+    Args:
+      - dL_dy: gradient of the loss with respect to the output. Shape (fan_out, n_samples).
     """
     self.gradL_d['W'] = (dL_dy @ self.x).t()
     self.gradL_d['b'] = (dL_dy @ torch.ones(dL_dy.shape[1],1)).t()
@@ -78,3 +82,9 @@ class Sigmoid(Layer):
     """
     self.y = 1/(1+torch.exp(-x))
     return self.y
+  
+  def backward(self, dL_dy):
+    """
+    Backward pass through the sigmoid activation layer. Returns the gradient of the loss with respect to the input.
+    """
+    return dL_dy * (self.y * (1-self.y)).t() # this is dL_dx
