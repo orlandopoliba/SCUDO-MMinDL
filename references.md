@@ -41,3 +41,4 @@
 ## Datasets
 - Real estate dataset collected from https://www.kaggle.com/datasets/kirbysasuke/house-price-prediction-simplified-for-regression
 - MNIST dataset collected from https://www.kaggle.com/datasets/oddrationale/mnist-in-csv
+- Seoul Bike Sharing Demand dataset collected from https://archive.ics.uci.edu/ml/datasets/Seoul+Bike+Sharing+Demand
