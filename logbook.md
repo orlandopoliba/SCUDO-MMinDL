@@ -93,7 +93,7 @@ Creating a Python library. Folder structure. Importing from a module. Implementa
 
 The backpropagation algorithm. The chain rule. The backpropagation algorithm for a neural network. Implementation of:
 - the `backward` method in the `MSE` class
-- the `backward` method in the `Linear` class
+- the `backward` method in the `Linear` class (for the computation of the gradient of the loss with respect to the weights)
 
 Python notebook on Python classes: [link](notebooks/06-python_classes.ipynb)
 
@@ -106,5 +106,30 @@ Notes on backpropagation: [link](notes/08%20-%20Backpropagation.pdf)
 Computation of the gradient of the mean squared error loss function: [link](notes/09%20-%20Grads%20|%20MSE.pdf)
 
 Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20|%20Linear%20layer.pdf)
+
+Folder of the Python library: [link](mydl/)
+
+# Lesson 9
+10/02/2025
+
+Implementation of:
+- the `backward` method in the `Linear` class (for the computation of the gradient of the loss with respect to the biases and the input)
+- the `backward` method in the `Sigmoid` class
+- the `backward` method in the `Sequential` class (backpropagation through the layers of the network)
+- the `Optimizer` class for the definition of an optimizer
+- the `GD` class for the gradient descent optimizer
+- the `train` method in the `Sequential` class
+
+Using the library for a regression problem (Seoul Bike Sharing Demand dataset).
+
+Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20|%20Linear%20layer.pdf)
+
+Computations of gradients in nonlinear activation layers: [link](notes/11%20-%20Grads%20|%20Nonlinear%20activations.pdf)
+
+Python notebook on building a neural network library: [link](notebooks/07-building_a_library.ipynb)
+
+Python notebook with tests for the library: [link](notebooks/08-testing_the_library.ipynb)
+
+Python notebook on regression (Seoul Bike Sharing Demand dataset): [link](notebooks/09-regression_bike_data.ipynb)
 
 Folder of the Python library: [link](mydl/)
