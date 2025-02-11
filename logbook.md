@@ -103,9 +103,9 @@ Python notebook with tests for the library: [link](notebooks/08-testing_the_libr
 
 Notes on backpropagation: [link](notes/08%20-%20Backpropagation.pdf)
 
-Computation of the gradient of the mean squared error loss function: [link](notes/09%20-%20Grads%20|%20MSE.pdf)
+Computation of the gradient of the mean squared error loss function: [link](notes/09%20-%20Grads%20-%20MSE.pdf)
 
-Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20|%20Linear%20layer.pdf)
+Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20-%20Linear%20layer.pdf)
 
 Folder of the Python library: [link](mydl/)
 
@@ -122,9 +122,9 @@ Implementation of:
 
 Using the library for a regression problem (Seoul Bike Sharing Demand dataset).
 
-Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20|%20Linear%20layer.pdf)
+Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20-%20Linear%20layer.pdf)
 
-Computations of gradients in nonlinear activation layers: [link](notes/11%20-%20Grads%20|%20Nonlinear%20activations.pdf)
+Computations of gradients in nonlinear activation layers: [link](notes/11%20-%20Grads%20-%20Nonlinear%20activations.pdf)
 
 Python notebook on building a neural network library: [link](notebooks/07-building_a_library.ipynb)
 
