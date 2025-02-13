@@ -5,6 +5,8 @@ See the [logbook](logbook.md) for the detailed program of the course.
 
 See the [references](references.md) for the list of references used in the course.
 
+See the [list of topics not covered in the course](exam_topics.md) for a list of examples of topics that could be chosen for the exam, in case the student is interested in working on a topic not covered in the course (After all, we demand machines to perform on data they have never seen before, so why not ask the same to ourselves?). 
+
 ## Program
 The objective of the course is to provide basic mathematical concepts and tools needed to have a clear insight into the mechanisms of neural networks and deep learning. Both theoretical and practical aspects will be covered, with hands-on exercise sessions for which the active participation of the students will be strongly encouraged.
  
