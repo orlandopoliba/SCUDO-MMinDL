@@ -27,7 +27,7 @@
 ## Optimization algorithms (general reference)
 - J. Nocedal and S. J. Wright, Numerical Optimization, Springer, 2006.
 
-## Gradient descent
+## Gradient descent and stochastic gradient descent
 - G. Garrigos, R. M. Gower. Handbook of convergence theorems for (Stochastic) Gradient Methods. https://arxiv.org/abs/2301.11235
 
 ## Neural networks
@@ -37,6 +37,10 @@
 ## Perceptron
 - F. Rosenblatt, The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain, Cornell Aeronautical Laboratory, 1957.
 - M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.å
+
+## Universal approximation theorem
+- G. Cybenko, Approximation by superpositions of a sigmoidal function, Mathematics of Control, Signals, and Systems, 2(4), 303-314, 1989.
+- M. Nielsen, Neural Networks and Deep Learning, Determination Press, 2015.
 
 ## Datasets
 - Real estate dataset collected from https://www.kaggle.com/datasets/kirbysasuke/house-price-prediction-simplified-for-regression

@@ -1,3 +1,5 @@
+import torch
+
 class Sequential:
   """
   A class representing a sequential neural network.
@@ -40,7 +42,7 @@ class Sequential:
     for layer in reversed(self.layers):
       dL_dy = layer.backward(dL_dy)
       
-  def train(self, x_train, y_train, loss, optimizer, n_epochs):
+  def train(self, x_train, y_train, loss, optimizer, n_epochs, batch_size=None):
     """
     Trains the network on the given data.
     
@@ -49,15 +51,24 @@ class Sequential:
       - y_train: output training data.
       - loss: loss function used to calculate the loss differential.
       - optimizer: optimizer used to update the network parameters.
-      - n_epochs: number of epochs to train the
+      - n_epochs: number of epochs to train the network.
+      - batch_size: Batch size. Default is None, which means that the whole dataset is used as a single batch.
     """
+    
+    batch_size = batch_size if batch_size else x_train.shape[0]
+    
     print('Training the network...')
     losses_train = []
     for epoch in range(n_epochs):
-      y_pred = self.forward(x_train)
-      current_loss = loss(y_pred, y_train)
-      losses_train.append(current_loss)
-      self.backward(y_train, loss)
-      optimizer.update(self)
+      permuted_indices = torch.randperm(x_train.shape[0])
+      batches = torch.split(permuted_indices, batch_size)
+      for batch in batches:
+        x_batch = x_train[batch]
+        y_batch = y_train[batch]
+        y_batch_pred = self.forward(x_batch)
+        current_loss_train = loss(y_batch_pred, y_batch).item()
+        losses_train.append(current_loss_train)
+        self.backward(y_batch, loss)
+        optimizer.update(self)
     print('Training complete.')
     return losses_train

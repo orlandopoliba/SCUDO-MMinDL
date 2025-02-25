@@ -103,7 +103,7 @@ Python notebook with tests for the library: [link](notebooks/08-testing_the_libr
 
 Notes on backpropagation: [link](notes/08%20-%20Backpropagation.pdf)
 
-Computation of the gradient of the mean squared error loss function: [link](notes/09%20-%20Grads%20-%20MSE.pdf)
+Computation of the differential of the mean squared error loss function: [link](notes/09%20-%20Grads%20-%20MSE.pdf)
 
 Computation of gradients in a linear layer: [link](notes/10%20-%20Grads%20-%20Linear%20layer.pdf)
 
@@ -131,5 +131,28 @@ Python notebook on building a neural network library: [link](notebooks/07-buildi
 Python notebook with tests for the library: [link](notebooks/08-testing_the_library.ipynb)
 
 Python notebook on regression (Seoul Bike Sharing Demand dataset): [link](notebooks/09-regression_bike_data.ipynb)
+
+Folder of the Python library: [link](mydl/)
+
+# Lesson 10
+12/02/2025
+
+Stochastic gradient descent. Mini-batch gradient descent. Implementation of batch training in the `train` method of the `Sequential` class.
+
+Implementation of the `CrossEntropy` loss class. Testing the library on the MNIST dataset.
+
+The Universal Approximation Theorem. 
+
+Computation of differential of the cross-entropy loss function: [link](notes/12%20-%20Grads%20-%20Softmax%20and%20Cross-entropy.pdf)
+
+Notes on stochastic gradient descent and mini-batch stochastic gradient descent: [link](notes/13%20-%20Stochastic%20Gradient%20Descent.pdf)
+
+Notes on the Universal Approximation Theorem: [link](notes/14%20-%20Universal%20Appproximation%20Theorem.pdf)
+
+Python notebook on building a neural network library: [link](notebooks/07-building_a_library.ipynb)
+
+Python notebook with tests on MNIST dataset: [link](notebooks/10-mydl_on_MNIST.ipynb)
+
+Python notebook on the Universal Approximation Theorem: [link](notebooks/11-universal_approximation_theorem.ipynb)
 
 Folder of the Python library: [link](mydl/)
