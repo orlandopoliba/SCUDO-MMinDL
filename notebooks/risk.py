@@ -123,7 +123,7 @@ def _(A_slider, X, Y, btn, loss0, mo, omega_slider, phi_slider):
 
 @app.cell
 def _(A, X, Y, f, np, omega, phi, plt):
-    def plot():
+    def plot_guess():
 
         fig = plt.figure()
         ax = fig.add_subplot(111)
@@ -137,11 +137,42 @@ def _(A, X, Y, f, np, omega, phi, plt):
         ax.legend()
 
         return fig
-    return (plot,)
+    return (plot_guess,)
 
 
 @app.cell
-def _(A_slider, Y, btn, df, mo, np, omega_slider, phi_slider, plot, y_pred):
+def _(Y, plt, y_pred):
+    def plot_l_dist():
+
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+
+        losses = (y_pred - Y)**2
+        ax.hist(losses, bins=20, color="green", alpha=0.7, density=True)
+
+        ax.set_xlim(0,4)
+        ax.set_ylim(0,3)
+        ax.set_xlabel("Loss value")
+        ax.set_ylabel("Density")
+        ax.set_title("Distribution of Losses over the Sample")
+
+        return fig
+    return (plot_l_dist,)
+
+
+@app.cell
+def _(
+    A_slider,
+    Y,
+    btn,
+    df,
+    mo,
+    np,
+    omega_slider,
+    phi_slider,
+    plot_l_dist,
+    y_pred,
+):
     mo.hstack([
         mo.vstack([
             mo.md(r"**Risk**: $\mathbb{E}[ \ell( f(X;A,\omega,\phi), Y ) ]$"),
@@ -152,7 +183,39 @@ def _(A_slider, Y, btn, df, mo, np, omega_slider, phi_slider, plot, y_pred):
             mo.md(r"**Empirical risk**: $\displaystyle \frac{1}{N} \sum_{i=0}^{N-1} \ell( f(X_i;A,\omega,\phi), Y_i )$" + fr" $= {np.mean((y_pred - Y)**2):.6f}$")
         ], justify="center", align="start", gap=1),
         mo.vstack([
-            plot(),
+            plot_l_dist(),
+            A_slider,
+            omega_slider,
+            phi_slider
+        ], justify='center', align="center", gap=1)
+    ], gap=0, justify="center", align="start")
+    return
+
+
+@app.cell
+def _(
+    A_slider,
+    Y,
+    btn,
+    df,
+    mo,
+    np,
+    omega_slider,
+    phi_slider,
+    plot_guess,
+    y_pred,
+):
+    mo.hstack([
+        mo.vstack([
+            mo.md(r"**Risk**: $\mathbb{E}[ \ell( f(X;A,\omega,\phi), Y ) ]$"),
+            mo.md(r"**Sample**: $(X_0,Y_0), (X_1, Y_1), \ldots, (X_{N-1}, Y_{N-1})$"),
+            btn,
+            mo.md(r"Dataset (observation of the sample): $(x_0,y_0), (x_1, y_1), \ldots, (x_{N-1}, y_{N-1})$"),
+            mo.ui.table(df, page_size=5),
+            mo.md(r"**Empirical risk**: $\displaystyle \frac{1}{N} \sum_{i=0}^{N-1} \ell( f(X_i;A,\omega,\phi), Y_i )$" + fr" $= {np.mean((y_pred - Y)**2):.6f}$")
+        ], justify="center", align="start", gap=1),
+        mo.vstack([
+            plot_guess(),
             A_slider,
             omega_slider,
             phi_slider
