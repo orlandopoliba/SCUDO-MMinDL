@@ -20,9 +20,9 @@ Linear regression. Using the `pandas` library in Python for data manipulation. E
 
 Linear regression as empirical risk minimization. Explicit derivation of the optimal weights for linear regression (normal equations). 
 
-[Notes on Linear Regression](notes/02%20-%20Linear%20regression.pdf)
+[Personal notes on Linear Regression](notes/02%20-%20Linear%20regression.pdf)
 
-[Marimo Python notebook on empirical risk](notebooks/01-risk.py)
+[Interactive notebook on empirical risk](notebooks/01-risk.py)
 
 [Marimo Python notebook on linear regression](notebooks/02-linear_regression.py)
 
@@ -30,6 +30,23 @@ Linear regression as empirical risk minimization. Explicit derivation of the opt
 
 # Lesson 3 
 03/02/2026
+
+Train and test sets. Coefficient of determination. Application to the house prices dataset.
+
+The MNIST dataset of handwritten digits.
+
+Introduction to binary classification. The logistic regression model. Sigmoid function. Entropy. Cross-entropy. Kullback-Leibler divergence. Jensen's inequality.
+
+[Personal notes on Logistic Regression](notes/03%20-%20Logistic%20regression%20&%20Cross-entropy.pdf)
+
+[Marimo Python notebook on linear regression](notebooks/02-linear_regression.py)
+
+[Marimo Python notebook on using the MNIST dataset](notebooks/03-using_MNIST.py)
+
+[Interactive notebook on Kullback-Leibler divergence](notebooks/04-KL.py)
+
+[Kaggle dataset on house prices](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction)
+
 
 # Lesson 4
 05/02/2026
