@@ -51,6 +51,16 @@ Introduction to binary classification. The logistic regression model. Sigmoid fu
 # Lesson 4
 05/02/2026
 
+Cross-entropy loss in binary logistic regression. Optimization of the cross-entropy loss. One-hot encoding of classes. Multi-class logistic regression. Softmax function. Cross-entropy loss in multi-class logistic regression.
+
+Multi-class logistic regression for the MNIST dataset. 
+
+[Personal notes on Logistic Regression](notes/03%20-%20Logistic%20regression%20&%20Cross-entropy.pdf)
+
+[Marimo Python notebook on binary logistic regression](notebooks/05-binary_logistic_regression.py)
+
+[Marimo Python notebook on multiclass logistic regression](notebooks/06-multiclass_logistic_regression.py)
+
 # Lesson 5 
 09/02/2026
 

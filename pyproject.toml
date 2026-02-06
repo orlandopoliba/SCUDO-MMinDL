@@ -6,5 +6,7 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "marimo>=0.19.7",
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.0",
     "pyzmq>=27.1.0",
 ]
