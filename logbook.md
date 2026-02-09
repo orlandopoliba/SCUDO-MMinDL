@@ -64,6 +64,14 @@ Multi-class logistic regression for the MNIST dataset.
 # Lesson 5 
 09/02/2026
 
+Optimization algorithms. Geometrical meaning of the gradient. Gradient descent algorithm. Continuous counterpart: gradient flow. Decrease of the loss function along a gradient flow. Comments on the choice of the learning rate with examples. 
+
+Unrolling of the gradient descent algorithm for quadratic losses. Relationship between the learning rate and the eigenvalues of the Hessian matrix. Convergence of the gradient descent algorithm under suitable conditions on the loss function. The problem of local minima.
+
+[Personal notes on Gradient Descent](notes/04%20-%20Gradient%20Descent.pdf)
+
+[Interactive notebook on gradient descent](notebooks/07-gradient_descent.py)
+
 # Lesson 6
 10/02/2026
 
