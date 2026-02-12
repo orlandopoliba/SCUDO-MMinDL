@@ -75,6 +75,32 @@ Unrolling of the gradient descent algorithm for quadratic losses. Relationship b
 # Lesson 6
 10/02/2026
 
+Introduction to neural networks. Interpreting linear regression as a one-layer neural network. Layers in a linear neural network. Expressiveness of neural networks. Activation functions. 
+
+The perceptron as an artificial neuron. Expressing the NAND logical gate with a perceptron. Functional completeness of the NAND gate. 
+
+Python classes. Definition of a class. Attributes and methods. The `__init__` method. The `self` keyword. Inheritance.
+
+Creating a Python library. Folder structure. Importing from a module. Implementation of:
+- the `Sequential` class for the definition of a multi-layered neural network 
+- the `Layer` class for the definition of a layer in a neural network
+- the `Linear` class for the definition of a linear layer in a neural network 
+- the `Sigmoid` class for the definition of a sigmoid activation function
+- the `forward` method in a layer and in a neural network
+- the `Loss` class for the definition of a loss function
+- the `MSE` class for the definition of the mean squared error loss function
+
+[Personal notes on neural networks](notes/05%20-%20Neural%20Networks.pdf)
+
+[Personal notes on the perceptron](notes/06%20-%20Perceptron.pdf)
+
+[Marimo Python notebook on Python classes](notebooks/08-python_classes.py)
+
+Marimo notebooks with Python modules:
+- [architecture module](notebooks/mydl/architecture.py)
+- [layers module](notebooks/mydl/layers.py)
+- [losses module](notebooks/mydl/losses.py)
+
 # Lesson 7
 17/02/2026
 
