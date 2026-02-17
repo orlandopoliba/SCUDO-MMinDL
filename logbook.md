@@ -104,5 +104,26 @@ Marimo notebooks with Python modules:
 # Lesson 7
 17/02/2026
 
+The backpropagation algorithm. The chain rule. The backpropagation algorithm in a multi-layered neural network. 
+
+Explicit computation of backpropagation in the MSE loss function, in the linear layer and in the sigmoid activation function.
+
+Implementation of:
+- the `backward` method in the `MSE` class
+- the `backward` method in the `Linear` class 
+- the `backward` method in the `Sigmoid` class
+
+[Personal notes on backpropagation](notes/07%20-%20Backpropagation.pdf)
+
+[Personal notes on computing the backward pass in the MSE loss](notes/08%20-%20Grads%20-%20MSE.pdf)
+
+[Personal notes on computing the backward pass in the linear layer](notes/09%20-%20Grads%20-%20Linear%20layer.pdf)
+
+[Personal notes on computing the backward pass in the sigmoid activation function](notes/10%20-%20Grads%20-%20Nonlinear%20activations.pdf)
+
+- [architecture module](notebooks/mydl/architecture.py)
+- [layers module](notebooks/mydl/layers.py)
+- [losses module](notebooks/mydl/losses.py)
+
 # Lesson 8 
 19/02/2026

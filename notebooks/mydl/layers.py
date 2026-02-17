@@ -26,9 +26,13 @@ class Layer:
 
     def __init__(self): 
         self.parameters = {}
+        self.gradL_d = {}
 
     def forward(self,x):
         raise NotImplementedError("Forward method not implemented")
+
+    def backward(self,dL_dy):
+        raise NotImplementedError("Backward method not implemented")
 
 
 @app.class_definition
@@ -41,7 +45,14 @@ class Linear(Layer):
         self.n_parameters = fan_in * fan_out + fan_out
 
     def forward(self,x):
+        self.x = x
         return x @ self.parameters['W'] + self.parameters['b']
+
+    def backward(self,dL_dy):
+        self.gradL_d['W'] = (dL_dy @ self.x).t()
+        self.gradL_d['b'] = torch.sum( dL_dy, dim=1, keepdim=True ).t()
+        dL_dx = self.parameters['W'] @ dL_dy
+        return dL_dx
 
 
 @app.class_definition
@@ -52,7 +63,12 @@ class Sigmoid(Layer):
         self.n_parameters = 0
 
     def forward(self,x):
-        return 1 / (1 + torch.exp(-x))
+        self.y = 1 / (1 + torch.exp(-x))
+        return self.y
+
+    def backward(self,dL_dy):
+        dL_dx = dL_dy * self.y * (1 - self.y).t()
+        return dL_dx
 
 
 @app.cell

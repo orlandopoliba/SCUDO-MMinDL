@@ -35,11 +35,16 @@ class Loss:
 @app.class_definition
 class MSE(Loss):
 
-    def __init__(self): 
+    def __init__(self):
         super().__init__()
 
     def __call__(self, y, y_train):
-        return torch.mean( (y - y_train)**2 )
+        return torch.mean((y - y_train) ** 2)
+
+    def backward(self, y, y_train):
+        n_samples = y.shape[0]
+        dL_dy = (2 / n_samples) * (y - y_train).t()
+        return dL_dy
 
 
 @app.cell

@@ -85,6 +85,49 @@ def _(loss, y, y_train):
 
 
 @app.cell
+def _(loss, y, y_train):
+    dL_dy = loss.backward(y, y_train)
+    return (dL_dy,)
+
+
+@app.cell
+def _(dL_dy):
+    dL_dy.shape
+    return
+
+
+@app.cell
+def _(torch):
+    A = torch.randn(10, 4)
+    return (A,)
+
+
+@app.cell
+def _(A):
+    A
+    return
+
+
+@app.cell
+def _(A, torch):
+    torch.sum(A, dim=1, keepdim=True)
+    return
+
+
+@app.cell
+def _(Linear, torch):
+    def _test(): 
+        x = torch.randn(100, 5)
+        linear = Linear(5, 3)
+        y = linear.forward(x)
+        dL_dy = torch.randn(3, 100)
+        dL_dx = linear.backward(dL_dy)
+        print(dL_dx.shape)
+    _test()
+    return
+
+
+@app.cell
 def _():
     return
 
