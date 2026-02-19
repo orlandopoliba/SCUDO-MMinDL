@@ -61,12 +61,6 @@ def _(torch):
 
 
 @app.cell
-def _(model, x_train):
-    y = model.forward(x_train)
-    return (y,)
-
-
-@app.cell
 def _():
     from mydl.losses import MSE
     return (MSE,)
@@ -79,51 +73,20 @@ def _(MSE):
 
 
 @app.cell
-def _(loss, y, y_train):
-    loss(y, y_train)
-    return
+def _():
+    from mydl.optimizers import GD
+    return (GD,)
 
 
 @app.cell
-def _(loss, y, y_train):
-    dL_dy = loss.backward(y, y_train)
-    return (dL_dy,)
+def _(GD, model):
+    optimizer = GD(model, learning_rate=0.1)
+    return (optimizer,)
 
 
 @app.cell
-def _(dL_dy):
-    dL_dy.shape
-    return
-
-
-@app.cell
-def _(torch):
-    A = torch.randn(10, 4)
-    return (A,)
-
-
-@app.cell
-def _(A):
-    A
-    return
-
-
-@app.cell
-def _(A, torch):
-    torch.sum(A, dim=1, keepdim=True)
-    return
-
-
-@app.cell
-def _(Linear, torch):
-    def _test(): 
-        x = torch.randn(100, 5)
-        linear = Linear(5, 3)
-        y = linear.forward(x)
-        dL_dy = torch.randn(3, 100)
-        dL_dx = linear.backward(dL_dy)
-        print(dL_dx.shape)
-    _test()
+def _(loss, model, optimizer, x_train, y_train):
+    losses = model.train(x_train, y_train, loss, optimizer, n_epochs=100)
     return
 
 
